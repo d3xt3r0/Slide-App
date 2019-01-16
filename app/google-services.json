@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "867905330865",
+    "firebase_url": "https://slide-34188.firebaseio.com",
+    "project_id": "slide-34188",
+    "storage_bucket": "slide-34188.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867905330865:android:6a1ea4a91a0bd178",
+        "android_client_info": {
+          "package_name": "io.oasis.slide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867905330865-ofjci1gk0b1nu82rbvpkb364qv8crc7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.oasis.slide",
+            "certificate_hash": "c70ecf90ac9be3eda233e6af5cc7804a72ca6a30"
+          }
+        },
+        {
+          "client_id": "867905330865-ktmhqtkb6slu0cpf3p32crr8j1uqv7mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrEDfARSOONqxF6KG2t_W8qZBcCM1IOP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867905330865-ktmhqtkb6slu0cpf3p32crr8j1uqv7mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
