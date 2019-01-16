@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         doAsync {
 
             val request = Request.Builder()
-                    .url("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GK1ZH1wjlEE0yf71q9vvtrjriGJqYWng")
+                    .url("Replace with your Developer key")
                     .build()
 
             val client = OkHttpClient()
@@ -37,22 +37,6 @@ class MainActivity : AppCompatActivity() {
 
             if (response.body() != null) {
                 val responseString = response.body()!!.string()
-                /*val json1 = JSONObject(responseString)
-                val json = json1.getJSONArray("results")
-
-
-                val news = ArrayList<News>()
-
-                for (i in 0..json.length() - 1) {
-                    val newsItem = News(
-                            json.getJSONObject(i).getString("title"),
-                            json.getJSONObject(i).getString("abstract"),
-                           // json.getJSONObject(i).getJSONArray("multimedia").getJSONObject(4).getString("url")
-
-                    )
-
-                    news.add(newsItem)
-                }*/
 
 
                 val json  = JSONObject(responseString)
@@ -78,22 +62,8 @@ class MainActivity : AppCompatActivity() {
 
                     val newItem = News(title,abstract,url,link,time)
                     news.add(newItem)
-                    /*Log.d("TETR",news.toString())*/
                 }
 
-
-               /* val keys = json.keys()
-                while (keys.hasNext()) {
-                    val key = keys.next().toString()
-                    val newItem = News(JSONObject(json.get(key).toString()).getString("title"),
-                            JSONObject(json.get(key).toString()).getString("desc"),
-                            JSONObject(json.get(key).toString()).getString("link"),
-                            JSONObject(json.get(key).toString()).getString("time"))
-                    news.add(newItem)
-
-                   // Log.d("TEQT",JSONObject(json.get(key).toString()).getString("link"))
-
-                }*/
 
                 uiThread {
 
